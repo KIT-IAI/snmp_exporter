@@ -4721,7 +4721,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -4740,7 +4739,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     - labelname: bsnAPIfNoiseChannelNo
@@ -4760,7 +4758,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -4778,7 +4775,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -4800,7 +4796,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -4871,7 +4866,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -4890,7 +4884,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -4909,7 +4902,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -4928,7 +4920,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -4947,7 +4938,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -4966,7 +4956,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -4985,7 +4974,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -5004,7 +4992,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -5023,7 +5010,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -5042,7 +5028,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -5061,7 +5046,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -5079,7 +5063,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -5101,7 +5084,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -5121,7 +5103,6 @@ cisco_wlc:
     indexes:
     - labelname: bsnAPDot3MacAddress
       type: PhysAddress48
-      fixed_size: 6
     - labelname: bsnAPIfSlotId
       type: gauge
     lookups:
@@ -14986,7 +14967,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabIface
@@ -14996,7 +14976,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabStrength
@@ -15006,7 +14985,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabTxBytes
@@ -15016,7 +14994,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabRxBytes
@@ -15026,7 +15003,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabTxPackets
@@ -15036,7 +15012,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabRxPackets
@@ -15046,7 +15021,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabTxRate
@@ -15056,7 +15030,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabRxRate
@@ -15066,7 +15039,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabRouterOSVersion
@@ -15076,7 +15048,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabUptime
@@ -15086,7 +15057,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabSignalToNoise
@@ -15096,7 +15066,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabTxStrengthCh0
@@ -15106,7 +15075,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabRxStrengthCh0
@@ -15116,7 +15084,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabTxStrengthCh1
@@ -15126,7 +15093,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabRxStrengthCh1
@@ -15136,7 +15102,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabTxStrengthCh2
@@ -15146,7 +15111,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabRxStrengthCh2
@@ -15156,7 +15120,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabTxStrength
@@ -15166,7 +15129,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlRtabRadioName
@@ -15176,7 +15138,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlRtabIface
       type: gauge
   - name: mtxrWlApIndex
@@ -15267,7 +15228,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlCMRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlCMRtabIface
       type: gauge
   - name: mtxrWlCMRtabIface
@@ -15277,7 +15237,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlCMRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlCMRtabIface
       type: gauge
   - name: mtxrWlCMRtabUptime
@@ -15287,7 +15246,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlCMRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlCMRtabIface
       type: gauge
   - name: mtxrWlCMRtabTxBytes
@@ -15297,7 +15255,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlCMRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlCMRtabIface
       type: gauge
   - name: mtxrWlCMRtabRxBytes
@@ -15307,7 +15264,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlCMRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlCMRtabIface
       type: gauge
   - name: mtxrWlCMRtabTxPackets
@@ -15317,7 +15273,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlCMRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlCMRtabIface
       type: gauge
   - name: mtxrWlCMRtabRxPackets
@@ -15327,7 +15282,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlCMRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlCMRtabIface
       type: gauge
   - name: mtxrWlCMRtabTxRate
@@ -15337,7 +15291,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlCMRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlCMRtabIface
       type: gauge
   - name: mtxrWlCMRtabRxRate
@@ -15347,7 +15300,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlCMRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlCMRtabIface
       type: gauge
   - name: mtxrWlCMRtabTxStrength
@@ -15357,7 +15309,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlCMRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlCMRtabIface
       type: gauge
   - name: mtxrWlCMRtabRxStrength
@@ -15367,7 +15318,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlCMRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlCMRtabIface
       type: gauge
   - name: mtxrWlCMRtabSsid
@@ -15377,7 +15327,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlCMRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlCMRtabIface
       type: gauge
   - name: mtxrWlCMRtabEapIdent
@@ -15387,7 +15336,6 @@ mikrotik:
     indexes:
     - labelname: mtxrWlCMRtabAddr
       type: PhysAddress48
-      fixed_size: 6
     - labelname: mtxrWlCMRtabIface
       type: gauge
   - name: mtxrWlCMRtabEntryCount
@@ -24713,6 +24661,246 @@ servertech_sentry4:
       21: nvmFail
       22: profileError
       23: conflict
+ste2:
+  walk:
+  - 1.3.6.1.2.1.1
+  - 1.3.6.1.4.1.21796.4.9
+  metrics:
+  - name: sysDescr
+    oid: 1.3.6.1.2.1.1.1
+    type: DisplayString
+    help: A textual description of the entity - 1.3.6.1.2.1.1.1
+  - name: sysObjectID
+    oid: 1.3.6.1.2.1.1.2
+    type: OctetString
+    help: The vendor's authoritative identification of the network management subsystem
+      contained in the entity - 1.3.6.1.2.1.1.2
+  - name: sysUpTime
+    oid: 1.3.6.1.2.1.1.3
+    type: gauge
+    help: The time (in hundredths of a second) since the network management portion
+      of the system was last re-initialized. - 1.3.6.1.2.1.1.3
+  - name: sysContact
+    oid: 1.3.6.1.2.1.1.4
+    type: DisplayString
+    help: The textual identification of the contact person for this managed node,
+      together with information on how to contact this person - 1.3.6.1.2.1.1.4
+  - name: sysName
+    oid: 1.3.6.1.2.1.1.5
+    type: DisplayString
+    help: An administratively-assigned name for this managed node - 1.3.6.1.2.1.1.5
+  - name: sysLocation
+    oid: 1.3.6.1.2.1.1.6
+    type: DisplayString
+    help: The physical location of this node (e.g., 'telephone closet, 3rd floor')
+      - 1.3.6.1.2.1.1.6
+  - name: sysServices
+    oid: 1.3.6.1.2.1.1.7
+    type: gauge
+    help: A value which indicates the set of services that this entity may potentially
+      offer - 1.3.6.1.2.1.1.7
+  - name: sysORLastChange
+    oid: 1.3.6.1.2.1.1.8
+    type: gauge
+    help: The value of sysUpTime at the time of the most recent change in state or
+      value of any instance of sysORID. - 1.3.6.1.2.1.1.8
+  - name: sysORIndex
+    oid: 1.3.6.1.2.1.1.9.1.1
+    type: gauge
+    help: The auxiliary variable used for identifying instances of the columnar objects
+      in the sysORTable. - 1.3.6.1.2.1.1.9.1.1
+    indexes:
+    - labelname: sysORIndex
+      type: gauge
+  - name: sysORID
+    oid: 1.3.6.1.2.1.1.9.1.2
+    type: OctetString
+    help: An authoritative identification of a capabilities statement with respect
+      to various MIB modules supported by the local SNMP application acting as a command
+      responder. - 1.3.6.1.2.1.1.9.1.2
+    indexes:
+    - labelname: sysORIndex
+      type: gauge
+  - name: sysORDescr
+    oid: 1.3.6.1.2.1.1.9.1.3
+    type: DisplayString
+    help: A textual description of the capabilities identified by the corresponding
+      instance of sysORID. - 1.3.6.1.2.1.1.9.1.3
+    indexes:
+    - labelname: sysORIndex
+      type: gauge
+  - name: sysORUpTime
+    oid: 1.3.6.1.2.1.1.9.1.4
+    type: gauge
+    help: The value of sysUpTime at the time this conceptual row was last instantiated.
+      - 1.3.6.1.2.1.1.9.1.4
+    indexes:
+    - labelname: sysORIndex
+      type: gauge
+  - name: inpIndex
+    oid: 1.3.6.1.4.1.21796.4.9.1.1.1
+    type: gauge
+    help: The binary input index. - 1.3.6.1.4.1.21796.4.9.1.1.1
+    indexes:
+    - labelname: inpIndex
+      type: gauge
+  - name: inpValue
+    oid: 1.3.6.1.4.1.21796.4.9.1.1.2
+    type: gauge
+    help: The binary input value. - 1.3.6.1.4.1.21796.4.9.1.1.2
+    indexes:
+    - labelname: inpIndex
+      type: gauge
+    enum_values:
+      0: "off"
+      1: "on"
+  - name: inpName
+    oid: 1.3.6.1.4.1.21796.4.9.1.1.3
+    type: OctetString
+    help: The binary input name. - 1.3.6.1.4.1.21796.4.9.1.1.3
+    indexes:
+    - labelname: inpIndex
+      type: gauge
+  - name: inpAlarmState
+    oid: 1.3.6.1.4.1.21796.4.9.1.1.4
+    type: gauge
+    help: The binary input alarm state. - 1.3.6.1.4.1.21796.4.9.1.1.4
+    indexes:
+    - labelname: inpIndex
+      type: gauge
+    enum_values:
+      0: normal
+      1: alarm
+  - name: sensIndex
+    oid: 1.3.6.1.4.1.21796.4.9.3.1.1
+    type: gauge
+    help: The sensor index. - 1.3.6.1.4.1.21796.4.9.3.1.1
+    indexes:
+    - labelname: sensIndex
+      type: gauge
+    lookups:
+    - labels:
+      - sensIndex
+      labelname: sensName
+      oid: 1.3.6.1.4.1.21796.4.9.3.1.2
+      type: OctetString
+  - name: sensName
+    oid: 1.3.6.1.4.1.21796.4.9.3.1.2
+    type: OctetString
+    help: The sensor name. - 1.3.6.1.4.1.21796.4.9.3.1.2
+    indexes:
+    - labelname: sensIndex
+      type: gauge
+    lookups:
+    - labels:
+      - sensIndex
+      labelname: sensName
+      oid: 1.3.6.1.4.1.21796.4.9.3.1.2
+      type: OctetString
+  - name: sensState
+    oid: 1.3.6.1.4.1.21796.4.9.3.1.3
+    type: gauge
+    help: The sensor state. - 1.3.6.1.4.1.21796.4.9.3.1.3
+    indexes:
+    - labelname: sensIndex
+      type: gauge
+    lookups:
+    - labels:
+      - sensIndex
+      labelname: sensName
+      oid: 1.3.6.1.4.1.21796.4.9.3.1.2
+      type: OctetString
+    enum_values:
+      0: invalid
+      1: normal
+      2: outofrangelo
+      3: outofrangehi
+      4: alarmlo
+      5: alarmhi
+  - name: sensString
+    oid: 1.3.6.1.4.1.21796.4.9.3.1.4
+    type: OctetString
+    help: The string representation of sensor value. - 1.3.6.1.4.1.21796.4.9.3.1.4
+    indexes:
+    - labelname: sensIndex
+      type: gauge
+    lookups:
+    - labels:
+      - sensIndex
+      labelname: sensName
+      oid: 1.3.6.1.4.1.21796.4.9.3.1.2
+      type: OctetString
+  - name: sensValue
+    oid: 1.3.6.1.4.1.21796.4.9.3.1.5
+    type: gauge
+    help: The integer (decimal * 10) representation of sensor value. - 1.3.6.1.4.1.21796.4.9.3.1.5
+    indexes:
+    - labelname: sensIndex
+      type: gauge
+    lookups:
+    - labels:
+      - sensIndex
+      labelname: sensName
+      oid: 1.3.6.1.4.1.21796.4.9.3.1.2
+      type: OctetString
+  - name: sensSN
+    oid: 1.3.6.1.4.1.21796.4.9.3.1.6
+    type: OctetString
+    help: The sensor Serial number. - 1.3.6.1.4.1.21796.4.9.3.1.6
+    indexes:
+    - labelname: sensIndex
+      type: gauge
+    lookups:
+    - labels:
+      - sensIndex
+      labelname: sensName
+      oid: 1.3.6.1.4.1.21796.4.9.3.1.2
+      type: OctetString
+  - name: sensUnit
+    oid: 1.3.6.1.4.1.21796.4.9.3.1.7
+    type: gauge
+    help: The sensor unit. - 1.3.6.1.4.1.21796.4.9.3.1.7
+    indexes:
+    - labelname: sensIndex
+      type: gauge
+    lookups:
+    - labels:
+      - sensIndex
+      labelname: sensName
+      oid: 1.3.6.1.4.1.21796.4.9.3.1.2
+      type: OctetString
+    enum_values:
+      0: none
+      1: celsius
+      2: fahrenheit
+      3: kelvin
+      4: percent
+  - name: sensID
+    oid: 1.3.6.1.4.1.21796.4.9.3.1.8
+    type: gauge
+    help: The sensor ID. - 1.3.6.1.4.1.21796.4.9.3.1.8
+    indexes:
+    - labelname: sensIndex
+      type: gauge
+    lookups:
+    - labels:
+      - sensIndex
+      labelname: sensName
+      oid: 1.3.6.1.4.1.21796.4.9.3.1.2
+      type: OctetString
+    enum_values:
+      0: none
+      1: celsius
+      2: fahrenheit
+      3: kelvin
+      4: percent
+  - name: infoAddressMAC
+    oid: 1.3.6.1.4.1.21796.4.9.70.1
+    type: DisplayString
+    help: MAC address in text form - 1.3.6.1.4.1.21796.4.9.70.1
+  version: 1
+  auth:
+    community: public
 synology:
   walk:
   - 1.3.6.1.2.1.2
@@ -30370,7 +30558,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaName
     oid: 1.3.6.1.4.1.41112.1.4.7.1.2
     type: DisplayString
@@ -30380,7 +30567,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaSignal
     oid: 1.3.6.1.4.1.41112.1.4.7.1.3
     type: gauge
@@ -30390,7 +30576,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaNoiseFloor
     oid: 1.3.6.1.4.1.41112.1.4.7.1.4
     type: gauge
@@ -30400,7 +30585,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaDistance
     oid: 1.3.6.1.4.1.41112.1.4.7.1.5
     type: gauge
@@ -30410,7 +30594,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaCcq
     oid: 1.3.6.1.4.1.41112.1.4.7.1.6
     type: gauge
@@ -30420,7 +30603,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaAmp
     oid: 1.3.6.1.4.1.41112.1.4.7.1.7
     type: gauge
@@ -30430,7 +30612,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaAmq
     oid: 1.3.6.1.4.1.41112.1.4.7.1.8
     type: gauge
@@ -30440,7 +30621,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaAmc
     oid: 1.3.6.1.4.1.41112.1.4.7.1.9
     type: gauge
@@ -30450,7 +30630,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaLastIp
     oid: 1.3.6.1.4.1.41112.1.4.7.1.10
     type: InetAddressIPv4
@@ -30460,7 +30639,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaTxRate
     oid: 1.3.6.1.4.1.41112.1.4.7.1.11
     type: gauge
@@ -30470,7 +30648,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaRxRate
     oid: 1.3.6.1.4.1.41112.1.4.7.1.12
     type: gauge
@@ -30480,7 +30657,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaTxBytes
     oid: 1.3.6.1.4.1.41112.1.4.7.1.13
     type: counter
@@ -30490,7 +30666,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaRxBytes
     oid: 1.3.6.1.4.1.41112.1.4.7.1.14
     type: counter
@@ -30500,7 +30675,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaConnTime
     oid: 1.3.6.1.4.1.41112.1.4.7.1.15
     type: gauge
@@ -30510,7 +30684,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaLocalCINR
     oid: 1.3.6.1.4.1.41112.1.4.7.1.16
     type: gauge
@@ -30520,7 +30693,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaTxCapacity
     oid: 1.3.6.1.4.1.41112.1.4.7.1.17
     type: gauge
@@ -30530,7 +30702,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaRxCapacity
     oid: 1.3.6.1.4.1.41112.1.4.7.1.18
     type: gauge
@@ -30540,7 +30711,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaTxAirtime
     oid: 1.3.6.1.4.1.41112.1.4.7.1.19
     type: gauge
@@ -30550,7 +30720,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaRxAirtime
     oid: 1.3.6.1.4.1.41112.1.4.7.1.20
     type: gauge
@@ -30560,7 +30729,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntStaTxLatency
     oid: 1.3.6.1.4.1.41112.1.4.7.1.21
     type: gauge
@@ -30570,7 +30738,6 @@ ubiquiti_airmax:
       type: gauge
     - labelname: ubntStaMac
       type: PhysAddress48
-      fixed_size: 6
   - name: ubntHostLocaltime
     oid: 1.3.6.1.4.1.41112.1.4.8.1
     type: DisplayString
