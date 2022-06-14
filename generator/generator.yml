@@ -655,3 +655,15 @@ modules:
         ignore: true # Lookup metric
       ifType:
         type: EnumAsInfo
+
+# STE2 Sensor
+  ste2:
+    walk:
+      - 1.3.6.1.2.1.1
+      - 1.3.6.1.4.1.21796.4.9
+    version: 1
+    auth:
+      community: public
+    lookups:
+      - source_indexes: [sensIndex]
+        lookup: sensName
