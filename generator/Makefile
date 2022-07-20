@@ -45,6 +45,7 @@ RARITAN_URL       := https://cdn.raritan.com/download/PX/v1.5.20/PDU-MIB.txt
 INFRAPOWER_URL    := https://www.austin-hughes.com/support/software/infrapower/IPD-MIB.7z
 LIEBERT_URL       := https://www.vertiv.com/globalassets/documents/software/monitoring/lgpmib-win_rev16_299461_0.zip
 STE2_URL					:= https://www.circitor.fr/Mibs/Mib/S/STE2-MIB.mib
+RITTAL_URL				:= https://www.rittal.de/downloads/rimatrix5/security/CMCIII/RITTAL_CMC-III_MIB_V_3_17_00.zip
 
 .DEFAULT: all
 
@@ -111,7 +112,8 @@ mibs: mib-dir \
   $(MIBDIR)/PDU-MIB.txt \
   $(MIBDIR)/IPD-MIB_Q419V9.mib \
   $(MIBDIR)/LIEBERT_GP_PDU.MIB \
-	$(MIBDIR)/STE2-MIB.mib
+	$(MIBDIR)/STE2-MIB.mib \
+	$(MIBDIR)/.rittal_cmc
 
 mib-dir:
 	@mkdir -p -v $(MIBDIR)
@@ -282,3 +284,11 @@ $(MIBDIR)/LIEBERT_GP_PDU.MIB:
 $(MIBDIR)/STE2-MIB.mib:
 	@echo ">> Downloading STE2 MIB to $(TMP)"
 	@curl $(CURL_OPTS) -o $(MIBDIR)/STE2-MIB.mib "$(STE2_URL)"
+
+$(MIBDIR)/.rittal_cmc:
+	$(eval TMP := $(shell mktemp))
+	@mkdir $(MIBDIR)/rittal_cmc
+	@echo ">> Downloading Rittal Mib to $(TMP)"
+	@curl $(CURL_OPTS) -o $(TMP) "$(RITTAL_URL)"
+	@unzip -j -d $(MIBDIR)/rittal_cmc $(TMP) "mibs/SMIv2/*"
+	@touch $(MIBDIR)/.rittal_cmc
