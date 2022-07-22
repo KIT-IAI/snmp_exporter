@@ -677,4 +677,5 @@ modules:
     lookups:
       - source_indexes: [cmcIIIDevIndex]
         lookup: cmcIIIDevAssembly
-
+      - source_indexes: [cmcIIIVarDeviceIndex, cmcIIIVarIndex]
+        lookup: cmcIIIVarName
