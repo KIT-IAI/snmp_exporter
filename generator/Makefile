@@ -301,4 +301,5 @@ $(MIBDIR)/.rittal_cmc:
 	@echo ">> Downloading Rittal Mib to $(TMP)"
 	@curl $(CURL_OPTS) -o $(TMP) "$(RITTAL_URL)"
 	@unzip -j -d $(MIBDIR)/rittal_cmc $(TMP) "mibs/SMIv2/*"
+	@cp $(MIBDIR)/rittal_cmc/RITTAL*.txt $(MIBDIR)
 	@touch $(MIBDIR)/.rittal_cmc
