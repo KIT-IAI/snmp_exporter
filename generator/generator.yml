@@ -682,3 +682,21 @@ modules:
         lookup: cmcIIIDevAssembly
       - source_indexes: [cmcIIIVarDeviceIndex, cmcIIIVarIndex]
         lookup: cmcIIIVarName
+
+# Vertiv Geist PDUs
+  geist_pdu:
+    walk:
+      - 1.3.6.1.2.1               # General System Information OIDs
+      - 1.3.6.1.4.1.21239.5.2.1   # General Device Information OIDs
+      - 1.3.6.1.4.1.21239.5.2.3.1   # PDU general information
+      - 1.3.6.1.4.1.21239.5.2.3.2   # PDU phases information
+      - 1.3.6.1.4.1.21239.5.2.3.3   # PDU breaker information
+      - 1.3.6.1.4.1.21239.5.2.3.4   # PDU line current information
+      - 1.3.6.1.4.1.21239.5.2.4     # Remote Temperature (RT) sensor
+      - 1.3.6.1.4.1.21239.5.2.5     # Remote Airflow
+      - 1.3.6.1.4.1.21239.5.2.6     # Remote Dew Point sensor
+      - 1.3.6.1.4.1.21239.5.2.7     # Remote CCAT sensor
+      - 1.3.6.1.4.1.21239.5.2.8     # Remote Temperature x 3
+      - 1.3.6.1.4.1.21239.5.2.9     # Remote Temperature
+      - 1.3.6.1.4.1.21239.5.2.10    # Remote Power Manager Sensor
+      - 1.3.6.1.4.1.21239.5.2.11    # Analog measurement (A2D) sensor (voltage

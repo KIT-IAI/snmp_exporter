@@ -47,6 +47,7 @@ INFRAPOWER_URL    := https://www.austin-hughes.com/support/software/infrapower/I
 LIEBERT_URL       := https://www.vertiv.com/globalassets/documents/software/monitoring/lgpmib-win_rev16_299461_0.zip
 STE2_URL					:= https://www.circitor.fr/Mibs/Mib/S/STE2-MIB.mib
 RITTAL_URL				:= https://www.rittal.de/downloads/rimatrix5/security/CMCIII/RITTAL_CMC-III_MIB_V_3_17_00.zip
+GEIST_URL					:= https://www.vertiv.com/498eac/globalassets/documents/website-updates/geist-upgradable-pdus/geist-i02-3_4_0-05032019_267728_0.zip
 
 .DEFAULT: all
 
@@ -119,7 +120,8 @@ mibs: mib-dir \
   $(MIBDIR)/IPD-MIB_Q419V9.mib \
   $(MIBDIR)/LIEBERT_GP_PDU.MIB \
 	$(MIBDIR)/STE2-MIB.mib \
-	$(MIBDIR)/.rittal_cmc
+	$(MIBDIR)/.rittal_cmc \
+	$(MIBDIR)/geist_imd.mib
 
 mib-dir:
 	@mkdir -p -v $(MIBDIR)
@@ -303,3 +305,10 @@ $(MIBDIR)/.rittal_cmc:
 	@unzip -j -d $(MIBDIR)/rittal_cmc $(TMP) "mibs/SMIv2/*"
 	@cp $(MIBDIR)/rittal_cmc/RITTAL*.txt $(MIBDIR)
 	@touch $(MIBDIR)/.rittal_cmc
+
+$(MIBDIR)/geist_imd.mib:
+	$(eval TMP := $(shell mktemp))
+	@echo ">> Downloading geist_imd.mib to $(TMP)"
+	@curl $(CURL_OPTS) -o $(TMP) $(GEIST_URL)
+	@unzip -j -d $(MIBDIR) $(TMP) geist-i02-3_4_0-05032019/geist_imd.mib
+	@rm -v $(TMP)
