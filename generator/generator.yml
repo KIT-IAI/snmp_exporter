@@ -570,7 +570,7 @@ modules:
 
 # InfraPower PDU's
 #
-# https://www.austin-hughes.com/support/software/infrapower/IPD-MIB.7z
+# https://www.austin-hughes.com/wp-content/uploads/2021/05/IPD-03-S-MIB.zip
 # The circuit table in the infrapower MIB is invalid as it has a table (circuitTable) nested inside another table (pduTable), and this invalid setup then confuses the generator.
   infrapower_pdu:
     walk:
@@ -700,3 +700,12 @@ modules:
       - 1.3.6.1.4.1.21239.5.2.9     # Remote Temperature
       - 1.3.6.1.4.1.21239.5.2.10    # Remote Power Manager Sensor
       - 1.3.6.1.4.1.21239.5.2.11    # Analog measurement (A2D) sensor (voltage
+# CyberPower
+#
+# https://www.cyberpowersystems.com/product/software/mib-files/mib-v29/
+  cyberpower:
+    version: 1
+    walk:
+      - 1.3.6.1.4.1.3808.1.1.1 # ups
+      - 1.3.6.1.4.1.3808.1.1.4 # environmentSensor
+      - 1.3.6.1.4.1.3808.1.1.6 # ePDU2

@@ -15,7 +15,7 @@ package config
 
 import (
 	"fmt"
-	"io/ioutil"
+	"os"
 	"regexp"
 	"time"
 
@@ -24,7 +24,7 @@ import (
 )
 
 func LoadFile(filename string) (*Config, error) {
-	content, err := ioutil.ReadFile(filename)
+	content, err := os.ReadFile(filename)
 	if err != nil {
 		return nil, err
 	}
@@ -37,6 +37,8 @@ func LoadFile(filename string) (*Config, error) {
 }
 
 var (
+	defaultRetries int = 3
+
 	DefaultAuth = Auth{
 		Community:     "public",
 		SecurityLevel: "noAuthNoPriv",
@@ -46,7 +48,7 @@ var (
 	DefaultWalkParams = WalkParams{
 		Version:                 2,
 		MaxRepetitions:          25,
-		Retries:                 3,
+		Retries:                 &defaultRetries,
 		Timeout:                 time.Second * 5,
 		Auth:                    DefaultAuth,
 		UseUnconnectedUDPSocket: false,
@@ -66,7 +68,7 @@ type Config map[string]*Module
 type WalkParams struct {
 	Version                 int           `yaml:"version,omitempty"`
 	MaxRepetitions          uint32        `yaml:"max_repetitions,omitempty"`
-	Retries                 int           `yaml:"retries,omitempty"`
+	Retries                 *int          `yaml:"retries,omitempty"`
 	Timeout                 time.Duration `yaml:"timeout,omitempty"`
 	Auth                    Auth          `yaml:"auth,omitempty"`
 	UseUnconnectedUDPSocket bool          `yaml:"use_unconnected_udp_socket,omitempty"`
@@ -75,10 +77,11 @@ type WalkParams struct {
 
 type Module struct {
 	// A list of OIDs.
-	Walk       []string   `yaml:"walk,omitempty"`
-	Get        []string   `yaml:"get,omitempty"`
-	Metrics    []*Metric  `yaml:"metrics"`
-	WalkParams WalkParams `yaml:",inline"`
+	Walk       []string        `yaml:"walk,omitempty"`
+	Get        []string        `yaml:"get,omitempty"`
+	Metrics    []*Metric       `yaml:"metrics"`
+	WalkParams WalkParams      `yaml:",inline"`
+	Filters    []DynamicFilter `yaml:"filters,omitempty"`
 }
 
 func (c *Module) UnmarshalYAML(unmarshal func(interface{}) error) error {
@@ -187,6 +190,21 @@ func (c WalkParams) ConfigureSNMP(g *gosnmp.GoSNMP) {
 		}
 	}
 	g.SecurityParameters = usm
+}
+
+type Filters struct {
+	Static  []StaticFilter  `yaml:"static,omitempty"`
+	Dynamic []DynamicFilter `yaml:"dynamic,omitempty"`
+}
+
+type StaticFilter struct {
+	Targets []string `yaml:"targets,omitempty"`
+	Indices []string `yaml:"indices,omitempty"`
+}
+type DynamicFilter struct {
+	Oid     string   `yaml:"oid"`
+	Targets []string `yaml:"targets,omitempty"`
+	Values  []string `yaml:"values,omitempty"`
 }
 
 type Metric struct {
