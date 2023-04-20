@@ -126,7 +126,6 @@ mibs: \
   $(MIBDIR)/UBNT-AirMAX-MIB.txt \
   $(MIBDIR)/WIENER-CRATE-MIB-5704.txt \
   $(MIBDIR)/PDU-MIB.txt \
-  $(MIBDIR)/IPD-MIB_Q419V9.mib \
   $(MIBDIR)/LIEBERT_GP_PDU.MIB \
 	$(MIBDIR)/STE2-MIB.mib \
 	$(MIBDIR)/.rittal_cmc \
@@ -336,7 +335,7 @@ $(MIBDIR)/geist_imd.mib:
 	@echo ">> Downloading geist_imd.mib to $(TMP)"
 	@curl $(CURL_OPTS) -o $(TMP) $(GEIST_URL)
 	@unzip -j -d $(MIBDIR) $(TMP) geist-i02-3_4_0-05032019/geist_imd.mib
-	
+
 $(MIBDIR)/CyberPower.MIB:
 	$(eval TMP := $(shell mktemp))
 	@echo ">> Downloading CyberPower.MIB to $(TMP)"
