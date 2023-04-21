@@ -49,6 +49,7 @@ LIEBERT_URL       := https://www.vertiv.com/globalassets/documents/software/moni
 STE2_URL					:= https://www.circitor.fr/Mibs/Mib/S/STE2-MIB.mib
 RITTAL_URL				:= https://www.rittal.de/downloads/rimatrix5/security/CMCIII/RITTAL_CMC-III_MIB_V_3_17_00.zip
 GEIST_URL					:= https://www.vertiv.com/498eac/globalassets/documents/website-updates/geist-upgradable-pdus/geist-i02-3_4_0-05032019_267728_0.zip
+JANITZA_UMG604_URL := https://www.janitza.de/files/download/snmp-mib/UMG_604_-_MIB_File.zip
 
 CYBERPOWER_VERSION := 2.10
 CYBERPOWER_URL     := https://dl4jz3rbrsfum.cloudfront.net/software/CyberPower_MIB_v$(CYBERPOWER_VERSION).MIB.zip
@@ -65,7 +66,8 @@ clean:
 		$(MIBDIR)/.net-snmp \
 		$(MIBDIR)/.paloalto_panos \
 		$(MIBDIR)/.synology \
-		$(MIBDIR)/.kemp-lm
+		$(MIBDIR)/.kemp-lm \
+		$(MIBDIR)/.rittal_cmc
 
 generator: *.go
 	go build
@@ -131,7 +133,8 @@ mibs: \
 	$(MIBDIR)/.rittal_cmc \
 	$(MIBDIR)/geist_imd.mib \
 	$(MIBDIR)/Infrapower-MIB.mib \
-  $(MIBDIR)/CyberPower.MIB
+  $(MIBDIR)/CyberPower.MIB \
+	$(MIBDIR)/UMG604.mib
 
 mib-dir:
 	@mkdir -p -v $(MIBDIR)
@@ -343,3 +346,11 @@ $(MIBDIR)/CyberPower.MIB:
 	@unzip -j -d $(MIBDIR) $(TMP) CyberPower_MIB_v$(CYBERPOWER_VERSION).MIB
 	@mv -v $(MIBDIR)/CyberPower_MIB_v$(CYBERPOWER_VERSION).MIB $@
 	@rm -v $(TMP)
+
+$(MIBDIR)/UMG604.mib:
+	$(eval TMP := $(shell mktemp))
+	@echo ">> Downloading Jaitza UMG604 MIB to $(TMP)"
+	@curl $(CURL_OPTS) -o $(TMP) $(JANITZA_UMG604_URL)
+	@unzip -j -d $(MIBDIR) $(TMP) UMG604.mib
+	@rm -v $(TMP)
+
